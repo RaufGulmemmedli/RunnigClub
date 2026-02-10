@@ -43,9 +43,9 @@ export function HeroSection() {
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              <span className="block">Qaçış ilə</span>
+              <span className="block">MegaPlus ilə</span>
               <span className="block bg-gradient-to-r from-megaplus-orange via-megaplus-yellow to-megaplus-green bg-clip-text text-transparent">
-                Həyatını Dəyiş
+                Ritmini tap
               </span>
             </h1>
             

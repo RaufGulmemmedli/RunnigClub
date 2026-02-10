@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const benefits = [
   "Bütün marafonlarda prioritet qeydiyyat",
-  "Mağazada 20% daimi endirim",
+  "Məhsullarda 20% daimi endirim",
   "Həftəlik qrup məşqləri",
   "Professional məşqçi dəstəyi",
   "Ekskluziv klub tədbirləri",
@@ -68,7 +68,7 @@ export function CTASection() {
                 size="lg"
                 className="bg-megaplus-orange hover:bg-megaplus-orange/90 text-white text-lg px-8 rounded-full group"
               >
-                Üzv Ol - 30₼/ay
+                Üzv Ol - 15₼/ay
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
@@ -91,12 +91,16 @@ export function CTASection() {
               <div className="absolute -inset-4 bg-gradient-to-r from-megaplus-orange via-megaplus-yellow to-megaplus-green rounded-3xl blur-2xl opacity-40" />
               
               <div className="relative w-80 sm:w-96 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/20">
-                <div className="mb-8">
+                <div className="mb-8 flex items-center gap-3">
                   <img 
                     src="/ChatGPT Image Feb 9, 2026, 01_00_51 PM.png" 
                     alt="MegaPlus Running Club Logo" 
                     className="h-14 w-auto object-contain"
                   />
+                  <span className="font-bold text-lg tracking-tight">
+                    <span className="text-megaplus-orange">MegaPlus</span>{" "}
+                    <span className="text-white">Running Club</span>
+                  </span>
                 </div>
 
                 <div className="space-y-4 mb-8">
@@ -120,7 +124,7 @@ export function CTASection() {
                 </div>
 
                 {/* Decorative chip */}
-                <div className="absolute top-8 right-8 w-10 h-8 rounded bg-gradient-to-br from-megaplus-yellow/80 to-megaplus-yellow/40" />
+              
               </div>
             </div>
           </div>

@@ -41,7 +41,7 @@ export function Footer() {
           <div>
             <div className="mb-6">
               <img 
-                src="/ChatGPT Image Feb 9, 2026, 01_00_51 PM.png" 
+                src="/ChatGPT Image Feb 10, 2026, 11_42_08 AM.png" 
                 alt="MegaPlus Running Club Logo" 
                 className="h-16 w-auto object-contain"
               />
