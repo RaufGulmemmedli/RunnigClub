@@ -13,7 +13,9 @@ const navItems = [
   { label: "Marafonlar", href: "/marathons" },
   { label: "Məhsullar", href: "/shop" },
   { label: "Qalereya", href: "/gallery" },
+  // { label: "Xəbərlər", href: "/news" },
   { label: "Haqqımızda", href: "/about" },
+  // { label: "Əlaqə", href: "/contact" },
 ];
 
 export function Header() {

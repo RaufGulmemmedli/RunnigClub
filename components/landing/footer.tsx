@@ -39,12 +39,16 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div>
-            <div className="mb-6">
+            <div className="mb-6 flex items-center gap-3">
               <img 
                 src="/ChatGPT Image Feb 10, 2026, 11_42_08 AM.png" 
                 alt="MegaPlus Running Club Logo" 
                 className="h-16 w-auto object-contain"
               />
+              <span className="font-bold text-xl tracking-tight">
+                <span className="text-megaplus-orange">MegaPlus</span>{" "}
+                <span className="text-white">Running Club</span>
+              </span>
             </div>
             <p className="text-white/70 mb-6">
               Azərbaycanın ən böyük qaçış icması. 2018-ci ildən bəri minlərlə qaçışçını bir araya gətiririk.
