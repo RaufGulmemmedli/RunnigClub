@@ -90,7 +90,7 @@ export function CTASection() {
               {/* Glow effect */}
               <div className="absolute -inset-4 bg-gradient-to-r from-megaplus-orange via-megaplus-yellow to-megaplus-green rounded-3xl blur-2xl opacity-40" />
               
-              <div className="relative w-80 sm:w-96 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/20">
+              <div className="relative w-96 sm:w-[450px] bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/20">
                 <div className="mb-8 flex items-center gap-3">
                   <img 
                     src="/ChatGPT Image Feb 9, 2026, 01_00_51 PM.png" 
