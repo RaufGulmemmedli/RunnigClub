@@ -17,7 +17,7 @@ export function ProductsSection() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16">
           <div>
             <Badge className="mb-4 bg-megaplus-green/10 text-megaplus-green border-megaplus-green/20">
-              Mağaza
+              Məhsullar
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="text-megaplus-blue dark:text-white">Professional </span>

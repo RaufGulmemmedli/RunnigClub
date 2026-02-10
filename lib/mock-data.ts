@@ -519,7 +519,7 @@ export const statistics: Statistic[] = [
 export const navItems = [
   { label: 'Ana Səhifə', href: '/' },
   { label: 'Marafonlar', href: '/marathons' },
-  { label: 'Mağaza', href: '/shop' },
+  { label: 'Məhsullar', href: '/shop' },
   { label: 'Qalereya', href: '/gallery' },
   { label: 'Haqqımızda', href: '/about' },
   { label: 'Əlaqə', href: '/contact' },

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X, ShoppingCart, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -10,7 +11,7 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { label: "Ana Səhifə", href: "/az" },
   { label: "Marafonlar", href: "/marathons" },
-  { label: "Mağaza", href: "/shop" },
+  { label: "Məhsullar", href: "/shop" },
   { label: "Qalereya", href: "/gallery" },
   { label: "Haqqımızda", href: "/about" },
 ];
@@ -18,6 +19,13 @@ const navItems = [
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  
+  // Check if we're on the landing page (just locale path like /az, /en, /ru)
+  const isLandingPage = /^\/[a-z]{2}$/.test(pathname);
+  
+  // Use transparent header only on landing page when not scrolled
+  const useTransparentHeader = isLandingPage && !isScrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,9 +39,9 @@ export function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-lg"
-          : "bg-transparent"
+        useTransparentHeader
+          ? "bg-transparent"
+          : "bg-background/95 backdrop-blur-md shadow-lg"
       )}
     >
       <div className="container mx-auto px-4">
@@ -41,13 +49,19 @@ export function Header() {
           {/* Logo */}
           <Link href="/az" className="flex items-center gap-3">
             <img 
-              src="/ChatGPT Image Feb 9, 2026, 01_00_51 PM.png" 
+              src={useTransparentHeader 
+                ? "/ChatGPT Image Feb 10, 2026, 11_42_08 AM.png" 
+                : "/ChatGPT Image Feb 9, 2026, 01_00_51 PM.png"
+              }
               alt="MegaPlus Running Club Logo" 
               className="h-14 w-auto object-contain"
             />
             <span className="font-bold text-lg tracking-tight">
               <span className="text-megaplus-orange">MegaPlus</span>{" "}
-              <span className="text-foreground">Running Club</span>
+              <span className={cn(
+                "transition-colors",
+                useTransparentHeader ? "text-white" : "text-foreground"
+              )}>Running Club</span>
             </span>
           </Link>
 
@@ -57,7 +71,10 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-foreground/80 hover:text-megaplus-orange transition-colors relative group"
+                className={cn(
+                  "text-sm font-medium hover:text-megaplus-orange transition-colors relative group",
+                  useTransparentHeader ? "text-white" : "text-foreground/80"
+                )}
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-megaplus-orange transition-all group-hover:w-full" />
@@ -71,7 +88,7 @@ export function Header() {
             <Button
               variant="ghost"
               size="icon"
-              className="relative"
+              className={cn("relative", useTransparentHeader && "text-white hover:text-white/80")}
             >
               <ShoppingCart className="h-5 w-5" />
               <span className="absolute -top-1 -right-1 w-5 h-5 bg-megaplus-orange text-white text-xs rounded-full flex items-center justify-center">
@@ -81,7 +98,7 @@ export function Header() {
             <Button
               variant="ghost"
               size="icon"
-              className="hidden sm:flex"
+              className={cn("hidden sm:flex", useTransparentHeader && "text-white hover:text-white/80")}
             >
               <User className="h-5 w-5" />
             </Button>
@@ -93,7 +110,7 @@ export function Header() {
             <Button
               variant="ghost"
               size="icon"
-              className="lg:hidden"
+              className={cn("lg:hidden", useTransparentHeader && "text-white hover:text-white/80")}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (

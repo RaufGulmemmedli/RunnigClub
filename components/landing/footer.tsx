@@ -78,7 +78,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/shop" className="text-white/70 hover:text-megaplus-orange transition-colors">
-                  Mağaza
+                  Məhsullar
                 </Link>
               </li>
               <li>

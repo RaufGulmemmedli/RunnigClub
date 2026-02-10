@@ -12,7 +12,7 @@
   "nav": {
     "home": "Ana Səhifə",
     "marathons": "Marafonlar",
-    "shop": "Mağaza",
+    "shop": "Məhsullar",
     "gallery": "Qalereya",
     "about": "Haqqımızda",
     "contact": "Əlaqə",
@@ -44,7 +44,7 @@
     }
   },
   "shop": {
-    "title": "Mağaza",
+    "title": "Məhsullar",
     "addToCart": "Səbətə əlavə et",
     "categories": {
       "all": "Hamısı",
