@@ -85,46 +85,43 @@ export function CTASection() {
           </div>
 
           {/* Right Content - Membership Card */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative">
+          <div className="flex justify-center lg:justify-end w-full">
+            <div className="relative w-full max-w-[450px]">
               {/* Glow effect */}
               <div className="absolute -inset-4 bg-gradient-to-r from-megaplus-orange via-megaplus-yellow to-megaplus-green rounded-3xl blur-2xl opacity-40" />
               
-              <div className="relative w-96 sm:w-[450px] bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/20">
-                <div className="mb-8 flex items-center gap-3">
+              <div className="relative w-full bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/20">
+                <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row items-center gap-3">
                   <img 
                     src="/ChatGPT Image Feb 9, 2026, 01_00_51 PM.png" 
                     alt="MegaPlus Running Club Logo" 
-                    className="h-14 w-auto object-contain"
+                    className="h-12 sm:h-14 w-auto object-contain"
                   />
-                  <span className="font-bold text-lg tracking-tight">
+                  <span className="font-bold text-base sm:text-lg tracking-tight text-center sm:text-left">
                     <span className="text-megaplus-orange">MegaPlus</span>{" "}
                     <span className="text-white">Running Club</span>
                   </span>
                 </div>
 
-                <div className="space-y-4 mb-8">
-                  <div className="text-white/60 text-sm uppercase tracking-wider">
+                <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+                  <div className="text-white/60 text-xs sm:text-sm uppercase tracking-wider">
                     Üzvlük Kartı
                   </div>
-                  <div className="text-3xl font-bold text-white tracking-widest">
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-widest">
                     •••• •••• •••• 2026
                   </div>
                 </div>
 
                 <div className="flex justify-between items-end">
                   <div>
-                    <div className="text-white/60 text-xs uppercase mb-1">Kart Sahibi</div>
-                    <div className="text-white font-semibold">AD SOYAD</div>
+                    <div className="text-white/60 text-[10px] sm:text-xs uppercase mb-1">Kart Sahibi</div>
+                    <div className="text-white font-semibold text-sm sm:text-base">AD SOYAD</div>
                   </div>
                   <div className="text-right">
-                    <div className="text-white/60 text-xs uppercase mb-1">Üzvlük</div>
-                    <div className="text-megaplus-yellow font-bold">PREMIUM</div>
+                    <div className="text-white/60 text-[10px] sm:text-xs uppercase mb-1">Üzvlük</div>
+                    <div className="text-megaplus-yellow font-bold text-sm sm:text-base">PREMIUM</div>
                   </div>
                 </div>
-
-                {/* Decorative chip */}
-              
               </div>
             </div>
           </div>
