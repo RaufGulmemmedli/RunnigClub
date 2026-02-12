@@ -90,24 +90,24 @@ export function CTASection() {
               {/* Glow effect */}
               <div className="absolute -inset-4 bg-gradient-to-r from-megaplus-orange via-megaplus-yellow to-megaplus-green rounded-3xl blur-2xl opacity-40" />
               
-              <div className="relative w-full bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/20">
-                <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row items-center gap-3">
+              <div className="relative w-full bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 border border-white/20">
+                <div className="mb-4 sm:mb-6 md:mb-8 flex items-center gap-2 sm:gap-3">
                   <img 
                     src="/ChatGPT Image Feb 9, 2026, 01_00_51 PM.png" 
                     alt="MegaPlus Running Club Logo" 
-                    className="h-12 sm:h-14 w-auto object-contain"
+                    className="h-10 sm:h-12 md:h-14 w-auto object-contain"
                   />
-                  <span className="font-bold text-base sm:text-lg tracking-tight text-center sm:text-left">
+                  <span className="font-bold text-sm sm:text-base md:text-lg tracking-tight">
                     <span className="text-megaplus-orange">MegaPlus</span>{" "}
                     <span className="text-white">Running Club</span>
                   </span>
                 </div>
 
-                <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
-                  <div className="text-white/60 text-xs sm:text-sm uppercase tracking-wider">
+                <div className="space-y-2 sm:space-y-3 md:space-y-4 mb-4 sm:mb-6 md:mb-8">
+                  <div className="text-white/60 text-[10px] sm:text-xs md:text-sm uppercase tracking-wider">
                     Üzvlük Kartı
                   </div>
-                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-widest">
+                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white tracking-widest">
                     •••• •••• •••• 2026
                   </div>
                 </div>
@@ -115,11 +115,11 @@ export function CTASection() {
                 <div className="flex justify-between items-end">
                   <div>
                     <div className="text-white/60 text-[10px] sm:text-xs uppercase mb-1">Kart Sahibi</div>
-                    <div className="text-white font-semibold text-sm sm:text-base">AD SOYAD</div>
+                    <div className="text-white font-semibold text-xs sm:text-sm md:text-base">AD SOYAD</div>
                   </div>
                   <div className="text-right">
                     <div className="text-white/60 text-[10px] sm:text-xs uppercase mb-1">Üzvlük</div>
-                    <div className="text-megaplus-yellow font-bold text-sm sm:text-base">PREMIUM</div>
+                    <div className="text-megaplus-yellow font-bold text-xs sm:text-sm md:text-base">PREMIUM</div>
                   </div>
                 </div>
               </div>
